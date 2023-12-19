@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Teams Default Format Mode",
+  "version": "1.0",
+  "description": "Set default message format mode in Microsoft Teams.",
+  "permissions": [
+    "activeTab",
+    "https://teams.microsoft.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://teams.microsoft.com/*"],
+      "js": ["content.ts"]
+    }
+  ]
+}
+
